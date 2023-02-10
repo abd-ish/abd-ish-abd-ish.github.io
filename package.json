@@ -2,12 +2,15 @@
   "name": "new_react_360_app",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://abd-ish.github.io",
   "scripts": {
     "start": "node node_modules/react-360/scripts/packager.js",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "resolutions": {
     "electron": "^11.0.1"
