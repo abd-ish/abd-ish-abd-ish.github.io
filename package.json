@@ -10,7 +10,8 @@
     "devtools": "react-devtools",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack --config webpack.config.js"
   },
   "resolutions": {
     "electron": "^11.0.1"
